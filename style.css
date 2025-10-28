@@ -1,0 +1,50 @@
+body{
+    background-color: blue;
+}
+
+.container{
+    min-height: 10rem; max-width: 1200px; margin: auto; background-color: wheat; border: 10px solid blanchedalmond; background-image: url(Images/GalaxySky.jpg); background-size: cover;
+}
+
+
+
+#pageheader{background-color: aqua; min-height: 10rem; padding: 1rem; background-image: url(Images/desertduringnighttimewithaskyfullofstars-957736.jpg);}
+
+#logo {
+width: 6.25rem;
+height: 6.25rem;
+background-color: none;
+background-image: url(Images/True-Logo.png);
+}
+
+#pageheader .container {
+background-color: none;
+min-height: auto;
+text-align: center; 
+}
+
+#media{background-color: rgb(125, 144, 144); min-height: 10rem; padding: 1rem; background-image: url(Images/hero.png);
+background-size: cover;
+aspect-ratio: 16 / 9;}
+
+#career{background-color: rgb(179, 254, 254); min-height: 10rem; padding: 1rem;}
+
+#pagecontent{background-color: darkcyan; min-height: 10rem; padding: 1rem; }
+
+#semester1{background-color: royalblue; min-height: 10rem; padding: 1rem;} 
+
+#semester2{background-color: rgb(87, 110, 140); min-height: 10rem; padding: 1rem;}
+
+#pagefooter{background-color: rgba(0, 229, 255, 0.518); min-height: 10rem; padding: 1rem;}
+
+#pagefooter .container {
+background-color: burlywood;}
+
+#subfooter{background-color: rgba(115, 214, 225, 0.518); min-height: 10rem; padding: 1rem;}
+
+audio {
+    display: block;
+    margin: auto;
+    background-color: aquamarine;
+    border: 5px solid aquamarine;
+}
