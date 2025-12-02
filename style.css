@@ -40,6 +40,10 @@ aspect-ratio: 16 / 9;}
 #pagefooter .container {
 background-color: burlywood;}
 
+#aifooter{background-color: rgba(115, 214, 225, 0.518); min-height: auto; padding: 1rem;}
+
+#aifooter .container { background-color: burlywood; text-align: center; min-height: auto;}
+
 #subfooter{background-color: rgba(115, 214, 225, 0.518); min-height: 10rem; padding: 1rem;}
 
 audio {
