@@ -13,19 +13,77 @@ body{
 #logo {
 width: 6.25rem;
 height: 6.25rem;
-background-color: none;
+background-color: transparent;
 background-image: url(Images/True-Logo.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+border-radius: 0.75rem;
+overflow: hidden;
+box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
 #pageheader .container {
-background-color: none;
+background-color: transparent;
 min-height: auto;
-text-align: center; 
+text-align: center; padding: 0; margin: 0;
 }
 
-#media{background-color: rgb(125, 144, 144); min-height: 10rem; padding: 1rem; background-image: url(Images/hero.png);
+/* Add a subtle dark overlay behind background images to improve text contrast */
+.container, #pageheader, #media {
+    position: relative;
+    color: #fff;
+}
+.container::before, #pageheader::before, #media::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.35);
+    z-index: 0;
+    pointer-events: none;
+}
+.container > *, #pageheader > .container > *, #media > * {
+    position: relative;
+    z-index: 1;
+}
+
+#pageheader nav { 
+    text-align: center;
+}
+
+#pageheader nav li:hover {
+    background-color: lightgray;
+}
+
+#pageheader nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#pageheader nav ul li {
+    border: 2px solid rgb(35, 33, 65);
+    margin: 0 1rem;
+    border-radius: 2px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#pageheader nav ul li.active {
+    background-color: #ffd54f;
+}
+#pageheader nav ul li.active a {
+    color: #000;
+}
+
+#media{background-color: rgb(125, 144, 144); min-height: 10rem; padding: 1rem; background-image: url(Images/Nativityscene-1024x640.jpg.webp);
 background-size: cover;
-aspect-ratio: 16 / 9;}
+aspect-ratio: 16/9;
+background-repeat: no-repeat;
+background-position: center;}
+
+@media screen and (min-width: 600px) {
+    #pageheader { background-color: lightblue; }
+}
 
 #career{background-color: rgb(179, 254, 254); min-height: 10rem; padding: 1rem;}
 
