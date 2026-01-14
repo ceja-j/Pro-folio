@@ -1,3 +1,0 @@
-# Jonathan Sanchez Ceja
-
-##Protfolio
