@@ -10,8 +10,9 @@
 
 
 | Gender        | Singular          |  Pural            |
----------------------------------------------------------
-| Masculine     |                   |                   |
+|---------------|-------------------|-------------------|
+| Masculine     | El chico alto - The tall boy                  |                   |
+| Feminine.     |                   |                   |
 
 
 
