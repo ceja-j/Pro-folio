@@ -1,3 +1,10 @@
 *.psd
 *.DS_Store
-*.Markdowns
+Markdowns/
+Images/
+Personal/
+Notes for Assignment/
+Career/
+Video/
+Audio/
+Poster/
