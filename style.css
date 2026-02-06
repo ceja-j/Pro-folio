@@ -32,14 +32,14 @@ text-align: center; padding: 0; margin: 0;
 /* Add a subtle dark overlay behind background images to improve text contrast */
 .container, #pageheader, #media {
     position: relative;
-    color: #fff;
+    color: #f9f9f9;
 }
 .container::before, #pageheader::before, #media::before {
     content: "";
     position: absolute;
     inset: 0;
     background-color: rgba(0,0,0,0.35);
-    z-index: 0;
+    z-index: -1;
     pointer-events: none;
 }
 .container > *, #pageheader > .container > *, #media > * {
@@ -52,7 +52,7 @@ text-align: center; padding: 0; margin: 0;
 }
 
 #pageheader nav li:hover {
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
 }
 
 #pageheader nav ul{
@@ -87,7 +87,7 @@ background-position: center;}
 
 #career{background-color: rgb(179, 254, 254); min-height: 10rem; padding: 1rem;}
 
-#pagecontent{background-color: darkcyan; min-height: 10rem; padding: 1rem; }
+#pagecontent{background-color: darkcyan; min-height: 10rem; padding: 1rem;}
 
 #semester1{background-color: royalblue; min-height: 10rem; padding: 1rem;} 
 
