@@ -6,7 +6,23 @@ body{
     min-height: 10rem; max-width: 1200px; margin: auto; background-color: wheat; border: 10px solid blanchedalmond; background-image: url(Images/GalaxySky.jpg); background-size: cover;
 }
 
+.container1, .container2 {
+    min-height: 10rem; max-width: 1200px; margin: auto; background-color: wheat; border: 10px solid blanchedalmond; background-image: url(Images/GalaxySky.jpg); background-size: cover; position: relative; color: #f9f9f9;
+}
 
+.container1::before, .container2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.35);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.container1 > *, .container2 > * {
+    position: relative;
+    z-index: 1;
+}
 
 #pageheader{background-color: aqua; min-height: 10rem; padding: 1rem; background-image: url(Images/desertduringnighttimewithaskyfullofstars-957736.jpg);}
 
@@ -87,6 +103,10 @@ background-position: center;}
 
 #career{background-color: rgb(179, 254, 254); min-height: 10rem; padding: 1rem;}
 
+#career ul {
+    text-align: left;
+}
+
 #pagecontent{background-color: darkcyan; min-height: 10rem; padding: 1rem;}
 
 #semester1{background-color: royalblue; min-height: 10rem; padding: 1rem;} 
@@ -97,6 +117,10 @@ background-position: center;}
 
 #pagefooter .container {
 background-color: burlywood;}
+
+#pagefooter nav {
+    text-align: center;
+}
 
 #aifooter{background-color: rgba(115, 214, 225, 0.518); min-height: auto; padding: 1rem;}
 
