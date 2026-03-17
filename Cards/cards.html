@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        body{background-color: rgb(178, 67, 67);}
+        h1{color: wheat; text-align: center; text-transform: uppercase;}
+        h2{color: wheat;}
+        iframe{background-color: tomato;}
+        .card{padding: 1.5rem; background-color: red; width: 80%; margin: auto; margin-bottom: 2rem; border-radius: 1rem; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);}
+        #playlist001{}
+        /* <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pMW8jzL0h0MMZBb4wpeJ1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */
+
+        @media screen and (min-width:1000px) {
+            body {
+                background-color: rgb(248, 120, 0);
+            }
+
+            .fbcards{ display: flex; gap: 1rem; max-width: 1200px; margin: auto;}
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cards</h1>
+<section class="fbcards">
+    <section id="card">
+    
+    <p> <iframe id="playlist001" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pMW8jzL0h0MMZBb4wpeJ1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> </p>
+    
+    </section>
+    <section id="card">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4DEi0moE52KaEvcOLNElcN?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+    <section id="card">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0RbU2Rr6f7c7AwdT1lICDQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+</section>
+
+</body>
+</html>

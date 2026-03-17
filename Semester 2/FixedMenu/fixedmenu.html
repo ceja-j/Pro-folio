@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Menu</title>
+    <style>
+/* Mobile First CSS */
+html {
+    height: 200%;
+
+}
+
+body{ font-family: Arial, Helvetica, sans-serif; background-color: aqua;}
+
+        img {
+            width: 100px;
+        }
+        #pageheader {
+            background-color: rgb(52, 206, 190);
+            padding: 1rem;
+            position: static;
+        }
+
+        #pageheader nav li {
+            background-color: rgb(56, 116, 96);
+            padding: .5rem;
+        }
+
+        #pageheader ul {
+            padding: .5rem;
+            list-style-type: none;
+            background-color: rosybrown;
+            /* Flexbox component */
+            display: flex;
+            flex-direction: row;
+            gap: .5rem;
+        }
+
+        main {
+            padding-top: 200rem;
+        }
+
+        #logo{
+            height: 100px;
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #fblogoheader {
+            background-color: rgb(56, 116, 96);
+        }
+
+        header{
+            background-color: rgb(56, 116, 96);
+        }
+
+        #pageheader h1 {
+            text-align: center;
+            color: white; 
+            background-color: steelblue;
+        }
+/* none header elements */
+        main {
+            padding: 1rem;
+        }
+
+        p{
+            line-height: 1.5;
+            color: rgb(75, 75, 30);
+        }
+
+        @media screen  and (min-width:650px) {
+            body{
+                background-color: lightblue;
+            }
+            #pageheader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                /* Flexbox component */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+            }
+            #fblogoheader {
+/* Flexbox component */
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+        }
+
+        }
+
+    
+            
+    </style>
+</head>
+
+<body>
+    <header id="pageheader">
+
+<!-- Start the logo and h1 -->
+<div id="fblogoheader"> <img src="/Semester 2/FixedMenu/Images/photogallery.png" alt="Paws and whiskers" id="logo"> </div>
+<h1> Paws and Whiskers </h1></div>
+<!-- End the logo and h1 -->
+
+<!-- Start the navigation -->
+<nav>
+<ul> 
+<li> <a href="#">Home</a> </li>
+<li> <a href="#">Our Pets</a> </li>
+<li> <a href="#">Testimonials</a> </li>
+<li> <a href="#">About Us</a> </li>
+</ul>
+</nav>
+<!-- End the navigation -->
+</header>
+
+<main>  
+    <h2>Fixed Menu</h2>
+    <p> This is a fixed menu. It will stay at the top of the page when you scroll down. </p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
+</main>
+
+</body>
+
+</html>    
