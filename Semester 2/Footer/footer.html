@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{background-color: lightgoldenrodyellow; color: rgb(41, 122, 119); line-height: 1.7;}
+        h1{padding: 1rem; text-align: center; color: lightcoral;}
+        #pagefooter{border-top: 1px solid ghostwhite; background-color: sandybrown; padding: 1rem;}
+
+        i{color: rgb(101, 89, 101); font-size: 1.2rem; margin-left: .3rem; margin-right: .3rem;}
+        #pagefooter>p{/*border: 1px solid ghostwhite;*/ text-align: center; flex-direction: column; display: flex;}
+        #pagefooter>article{/*border: 1px solid ghostwhite;*/ padding: 1rem;}
+        i.fa-dog{ transform: rotate(45deg) ;}
+        @media screen and (min-width: 700px) {
+            body{ background-color: lightgreen;}
+            #pagefooter{display: flex; justify-content: space-between; text-align: left;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Footer</h1>
+    <footer id="pagefooter">
+        <p>
+            <i class="fa-solid fa-dog"></i>Paws & Whiskers<br>
+            <i class="fa-solid fa-bowl-food"></i>Made with love for our furry friends!
+        </p>
+
+        <article>
+            <i class="fa-solid fa-mobile"></i>559-935-7520 <br>
+            <i class="fa-solid fa-map-pin"></i>1234 Bark Street, Fresno, CA 93721 <br>
+            <i class="fa-brands fa-mailchimp"></i>info@pawsandwhiskers.com
+        </article>
+
+
+    </footer>
+</body>
+
+</html>
