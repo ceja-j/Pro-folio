@@ -5,25 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <style>
-        /* mobile first design */
-        body{margin: 0; padding: 0;}
-        #pageheader {background-color: rgb(215, 141, 43);}
-        #logo {width: 100px; height: 100px; background-color: rgb(131, 129, 129); border-radius: 50%; border: 2px solid darkblue; margin: auto; margin-bottom: 1rem;}
-        #pageheader nav {background-color: rgb(46, 77, 104);}
+        :root {
+            color-scheme: dark;
+            --header-bg: #1f3a5f;
+            --header-accent: #3f6f9f;
+            --nav-bg: rgba(255, 255, 255, 0.08);
+            --link-color: #f4f7fb;
+            --link-hover: #ffd27f;
+            --body-bg: #eef2f6;
+            --text-color: #0f172a;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--body-bg);
+            color: var(--text-color);
+        }
+
+        #pageheader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 1rem;
+            background: linear-gradient(135deg, var(--header-bg), #264f7a);
+            color: var(--link-color);
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.18);
+        }
+
+        #logo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(180deg, #7f9cc7, #4b6b94);
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            display: grid;
+            place-items: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.15rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        nav {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0.6rem 0.5rem;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            background: var(--nav-bg);
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 0.7rem 1.2rem;
+            text-decoration: none;
+            color: var(--link-color);
+            font-weight: 600;
+            transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+            border-radius: 999px;
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            background: rgba(255, 255, 255, 0.16);
+            color: var(--link-hover);
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 640px) {
+            #pageheader {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5rem 2rem;
+            }
+
+            nav ul {
+                justify-content: flex-end;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div id="logo"></div>
+    <header id="pageheader">
+        <div id="logo">Logo</div>
         <nav>
             <ul>
-                <li> Home</li>
-                <li> About</li>
-                <li> Services</li>
-                <li> Contact</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
 </body>
 </html>
