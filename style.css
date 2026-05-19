@@ -113,6 +113,16 @@ background-position: center center;}
 
 #semester2{background-color: rgb(87, 110, 140); min-height: 10rem; padding: 1rem;}
 
+#worksamples{background-color: rgb(55, 88, 133); min-height: 10rem; padding: 1rem;}
+
+#worksamples ul{ list-style: none;}
+
+#certificates{background-color: rgb(10, 33, 63); min-height: 10rem; padding: 1rem;}
+
+#certificates ul{ list-style: none;}
+
+#certificates i { color: rgb(171, 168, 209);}
+
 #pagefooter{background-color: rgba(0, 229, 255, 0.518); min-height: 10rem; padding: 1rem;}
 
 #pagefooter .container {
